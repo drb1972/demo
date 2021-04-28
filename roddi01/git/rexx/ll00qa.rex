@@ -3,6 +3,7 @@
 /* parse arg xml , fecha , hora , usuario , retcod, mens , debug , param */
 parse arg xml , fecha , hora , usuario , retcod, mens , param
 /* comment 1 */
+/* comment 2 */
 sal.1='Ejecutado:  'xml' - Fecha:'fecha' - Hora:'hora' - User:'usuario
 sal.2='Parametros: 'param
 sal.3='RC 'retcod
