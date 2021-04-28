@@ -1,10 +1,1 @@
-//JOB DUMMY2
-//STEP1    EXEC PGM=IDCAMS
-//SYSPRINT DD   SYSOUT=SYSOUT
-//SYSIN    DD   *
-    DEFINE CLUSTER -
-       (NAME (Name) -
-       STORAGECLASS (StorageClass) -
-       MANAGEMENTCLASS (ManagementClass) -
-       DATACLASS (DataClass))
-/*
+THIS IS A TEST
