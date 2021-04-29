@@ -1,0 +1,2 @@
+MSGCH000 'Seleccion erronea'                    .ALARM=YES
+'Debe seleccionar D para discos, T para tareas o J para JOBS.
