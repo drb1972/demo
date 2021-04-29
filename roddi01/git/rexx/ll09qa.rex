@@ -3,10 +3,6 @@
 /*--------------------------------------------------------------------*/
 arg entorno fichero
 
-/* comment added */
-/* another comment */
-/* new comment */
-
 select
    when entorno = PRODPR then entorno = PRUE
    when entorno = PRODAL then entorno = ALFA
