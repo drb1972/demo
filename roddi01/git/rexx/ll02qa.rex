@@ -3,7 +3,6 @@
 /*-- LL02QA                                                      -----*/
 /*--------------------------------------------------------------------*/
 /* parametros: clave: Nombre de directorio a crear en el UNIX         */
-/*                    Lo pasa SQA                                     */
 /* entornos  : ANTE - CURS - PRODPR - PRODAL - PRODCI - PRODEX        */
 /* DB2       : SI/NO Para obtener las Plantable y Catalog del DB2     */
 /* Lista     : Lista de paquetes separados por comas                  */
