@@ -5,6 +5,7 @@
 /* entornos  : ANTE - CURS - PRODPR - PRODAL - PRODCI - PRODEX        */
 /* DB2       : SI/NO Para obtener las Plantable y Catalog del DB2     */
 /*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
 say '<?xml version="1.0"?>'
 parse upper arg subsis ',' cam ',' entorno ',' DB2
 parse upper arg parametros
