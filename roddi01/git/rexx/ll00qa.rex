@@ -10,11 +10,8 @@ sal.2='Parametros: 'param
 sal.3='RC 'retcod
 sal.4= mens
 sal.5= '=============================================================='
-sal.0= 5
-/* sal.5= 'Debug' debug
 sal.6= ''
-sal.0= 6 */
-/* fichero='TMPPR.CHM.LOGUSSQA.D'substr(date('S'),2) */
+sal.0= 6
 sufijo = 'A'substr(date('S'),1,4)
 fichero='CHM.PROD.INICIAL.SQALOG.'||sufijo
 miembro = 'D'substr(date('S'),2)
