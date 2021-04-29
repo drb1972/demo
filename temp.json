@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "exitCode": 0,
+  "message": "",
+  "stdout": "\n",
+  "stderr": "",
+  "data": {
+    "success": true,
+    "commandResponse": null,
+    "apiResponse": {
+      "items": [],
+      "returnedRows": 0,
+      "JSONversion": 1
+    }
+  }
+}
