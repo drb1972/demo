@@ -11,6 +11,7 @@
 /*-- h_fin     : hhmmss                                             --*/
 /*-- aplperm   : * para todas                                       --*/
 /*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
 parse upper arg subsis','ent','f_ini','f_fin','h_ini','h_fin','aplperm
 parse upper arg parametros
 entorno  = ent
