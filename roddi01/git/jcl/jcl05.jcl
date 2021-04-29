@@ -12,7 +12,6 @@
        MANAGEMENTCLASS (ManagementClass) -
        DATACLASS (DataClass))
 /*
-//* COMMENT ADDED
 //STEP2    EXEC PGM=IDCAMS
 //SYSPRINT DD   SYSOUT=SYSOUT
 //SYSIN    DD   *

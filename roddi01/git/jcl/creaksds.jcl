@@ -5,6 +5,7 @@
 //*------------------------------------------------------
 //STEP1  EXEC PGM=IDCAMS
 //*
+//*
 //SYSPRINT DD  SYSOUT=*
 //SYSIN    DD  *
   DEFINE CLUSTER (NAME(RODDI01.KSDS)      -
