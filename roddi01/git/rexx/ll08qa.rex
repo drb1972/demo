@@ -4,8 +4,6 @@ call CAM
 call proceso
 call salir
 
-/* cooment added */
-
 /*-- obtiene todos los cams en allcam. -------------------------------*/
 CAM:
    CL = ''
