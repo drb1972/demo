@@ -1,3 +1,0 @@
-TSGCH000 'Seleccion erronea'                    .ALARM=YES
-'Debe seleccionar R para resfrecar o E para salir'
-'another line'
