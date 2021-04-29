@@ -8,6 +8,7 @@
 /* listapl   : aplicaciones permitidas (* - todas)                    */
 /*           : si hay una lista, tiene que ser CAM + T o Z            */
 /*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
 parse upper arg subsis ',' filtro ',' entorno ',' listapl
 parse upper arg parametros
 /*--------------------------------------------------------------------*/
