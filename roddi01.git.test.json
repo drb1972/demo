@@ -1,31 +1,32 @@
 {
-  "success": true,
-  "exitCode": 0,
-  "message": "",
-  "stdout": "\u001b[32m- \u001b[39m\n  \u001b[33mmember: \u001b[39mJCL1\n  \u001b[33mvers: \u001b[39m  \u001b[34m1\u001b[39m\n  \u001b[33mmod: \u001b[39m   \u001b[34m1\u001b[39m\n  \u001b[33mc4date: \u001b[39m2021/04/27\n  \u001b[33mm4date: \u001b[39m2021/04/28\n  \u001b[33mcnorc: \u001b[39m \u001b[34m1\u001b[39m\n  \u001b[33minorc: \u001b[39m \u001b[34m10\u001b[39m\n  \u001b[33mmnorc: \u001b[39m \u001b[34m0\u001b[39m\n  \u001b[33mmtime: \u001b[39m 06:06\n  \u001b[33mmsec: \u001b[39m  37\n  \u001b[33muser: \u001b[39m  RODDI01\n  \u001b[33msclm: \u001b[39m  N\n\n\n",
-  "stderr": "",
-  "data": {
-    "success": true,
-    "commandResponse": null,
-    "apiResponse": {
-      "items": [
-        {
-          "member": "JCL1",
-          "vers": 1,
-          "mod": 1,
-          "c4date": "2021/04/27",
-          "m4date": "2021/04/28",
-          "cnorc": 1,
-          "inorc": 10,
-          "mnorc": 0,
-          "mtime": "06:06",
-          "msec": "37",
-          "user": "RODDI01",
-          "sclm": "N"
-        }
-      ],
-      "returnedRows": 1,
-      "JSONversion": 1
-    }
+  "success": false,
+  "exitCode": 1,
+  "message": "z/OSMF REST API Error:\nRest API failure with HTTP(S) status 500\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set in use - Data set 'RODDI01.GIT.TEST' in use by another user, try later or enter HELP for a list of jobs and users allocated to 'RODDI01.GIT.TEST'.\n\n",
+  "stdout": "",
+  "stderr": "Command Error:\nz/OSMF REST API Error:\nRest API failure with HTTP(S) status 500\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set in use - Data set 'RODDI01.GIT.TEST' in use by another user, try later or enter HELP for a list of jobs and users allocated to 'RODDI01.GIT.TEST'.\n\n\nError Details:\nHTTP(S) error status \"500\" received.\nReview request details (resource, base path, credentials, payload) and ensure correctness.\n\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds/roddi01.git.test/member\nRequest:   GET\nHeaders:   [{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined\n",
+  "data": {},
+  "error": {
+    "msg": "z/OSMF REST API Error:\nRest API failure with HTTP(S) status 500\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set in use - Data set 'RODDI01.GIT.TEST' in use by another user, try later or enter HELP for a list of jobs and users allocated to 'RODDI01.GIT.TEST'.\n\n",
+    "causeErrors": "{\"category\":4,\"rc\":8,\"reason\":0,\"message\":\"LMINIT error\",\"details\":[\"ISRZ002 Data set in use - Data set 'RODDI01.GIT.TEST' in use by another user, try later or enter HELP for a list of jobs and users allocated to 'RODDI01.GIT.TEST'.\"]}",
+    "source": "http",
+    "errorCode": 500,
+    "port": 443,
+    "host": "sr01brs.lvn.broadcom.net",
+    "basePath": "",
+    "httpStatus": 500,
+    "headers": [
+      {
+        "X-IBM-Attributes": "base"
+      },
+      {
+        "X-IBM-Max-Items": "0"
+      },
+      {
+        "X-CSRF-ZOSMF-HEADER": true
+      }
+    ],
+    "resource": "/zosmf/restfiles/ds/roddi01.git.test/member",
+    "request": "GET",
+    "additionalDetails": "HTTP(S) error status \"500\" received.\nReview request details (resource, base path, credentials, payload) and ensure correctness.\n\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds/roddi01.git.test/member\nRequest:   GET\nHeaders:   [{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined"
   }
 }
