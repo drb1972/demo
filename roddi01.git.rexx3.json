@@ -1,31 +1,32 @@
 {
-  "success": true,
-  "exitCode": 0,
-  "message": "",
-  "stdout": "\u001b[32m- \u001b[39m\n  \u001b[33mmember: \u001b[39mJCLID\n  \u001b[33mvers: \u001b[39m  \u001b[34m1\u001b[39m\n  \u001b[33mmod: \u001b[39m   \u001b[34m3\u001b[39m\n  \u001b[33mc4date: \u001b[39m2021/03/25\n  \u001b[33mm4date: \u001b[39m2021/04/29\n  \u001b[33mcnorc: \u001b[39m \u001b[34m21\u001b[39m\n  \u001b[33minorc: \u001b[39m \u001b[34m20\u001b[39m\n  \u001b[33mmnorc: \u001b[39m \u001b[34m0\u001b[39m\n  \u001b[33mmtime: \u001b[39m 19:28\n  \u001b[33mmsec: \u001b[39m  53\n  \u001b[33muser: \u001b[39m  RODDI01\n  \u001b[33msclm: \u001b[39m  N\n\n\n",
-  "stderr": "",
-  "data": {
-    "success": true,
-    "commandResponse": null,
-    "apiResponse": {
-      "items": [
-        {
-          "member": "JCLID",
-          "vers": 1,
-          "mod": 3,
-          "c4date": "2021/03/25",
-          "m4date": "2021/04/29",
-          "cnorc": 21,
-          "inorc": 20,
-          "mnorc": 0,
-          "mtime": "19:28",
-          "msec": "53",
-          "user": "RODDI01",
-          "sclm": "N"
-        }
-      ],
-      "returnedRows": 1,
-      "JSONversion": 1
-    }
+  "success": false,
+  "exitCode": 1,
+  "message": "z/OSMF REST API Error:\nRest API failure with HTTP(S) status 404\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set not cataloged - 'RODDI01.GIT.REXX3' was not found in catalog.\n\n",
+  "stdout": "",
+  "stderr": "Command Error:\nz/OSMF REST API Error:\nRest API failure with HTTP(S) status 404\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set not cataloged - 'RODDI01.GIT.REXX3' was not found in catalog.\n\n\nError Details:\nHTTP(S) error status \"404\" received.\nReview request details (resource, base path, credentials, payload) and ensure correctness.\n\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds/roddi01.git.rexx3/member\nRequest:   GET\nHeaders:   [{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined\n",
+  "data": {},
+  "error": {
+    "msg": "z/OSMF REST API Error:\nRest API failure with HTTP(S) status 404\ncategory: 4\nrc:       8\nreason:   0\nmessage:  LMINIT error\ndetails: \n  - ISRZ002 Data set not cataloged - 'RODDI01.GIT.REXX3' was not found in catalog.\n\n",
+    "causeErrors": "{\"category\":4,\"rc\":8,\"reason\":0,\"message\":\"LMINIT error\",\"details\":[\"ISRZ002 Data set not cataloged - 'RODDI01.GIT.REXX3' was not found in catalog.\"]}",
+    "source": "http",
+    "errorCode": 404,
+    "port": 443,
+    "host": "sr01brs.lvn.broadcom.net",
+    "basePath": "",
+    "httpStatus": 404,
+    "headers": [
+      {
+        "X-IBM-Attributes": "base"
+      },
+      {
+        "X-IBM-Max-Items": "0"
+      },
+      {
+        "X-CSRF-ZOSMF-HEADER": true
+      }
+    ],
+    "resource": "/zosmf/restfiles/ds/roddi01.git.rexx3/member",
+    "request": "GET",
+    "additionalDetails": "HTTP(S) error status \"404\" received.\nReview request details (resource, base path, credentials, payload) and ensure correctness.\n\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds/roddi01.git.rexx3/member\nRequest:   GET\nHeaders:   [{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined"
   }
 }
