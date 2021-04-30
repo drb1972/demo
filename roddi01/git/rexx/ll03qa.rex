@@ -11,16 +11,12 @@
 /*-- h_fin     : hhmmss                                             --*/
 /*-- aplperm   : * para todas                                       --*/
 /*--------------------------------------------------------------------*/
+/* ccid 1234 */
 /*--------------------------------------------------------------------*/
 parse upper arg subsis','ent','f_ini','f_fin','h_ini','h_fin','aplperm
 parse upper arg parametros
 entorno  = ent
-f_ini    = strip(f_ini)
-f_fin    = strip(f_fin)
-h_ini    = strip(h_ini)
-h_fin    = strip(h_fin)
-if h_ini = '' then h_ini = '000000'
-if h_fin = '' then h_fin = '999999'
+
 /*--------------------------------------------------------------------*/
 cont = 0
 retcod = ''

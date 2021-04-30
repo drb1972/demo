@@ -16,6 +16,7 @@ select
    end
 end
 
+/* ccid 1234 */
 
 /* parametros: filtro - entorno - listapl                             */
 /* filtro    : Como minimo se pasa el cam (3 caracteres)              */
