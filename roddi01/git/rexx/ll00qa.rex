@@ -1,6 +1,9 @@
 /* REXX - Log de los uss                                      */
 /*  x=usslog('ussxmlxx',date(),time(),userid(),parametros)    */
 /* parse arg xml , fecha , hora , usuario , retcod, mens , debug , param */
+
+/* CHANGE 99 */
+
 parse arg xml , fecha , hora , usuario , retcod, mens , param
 /* comment 1 */
 /* comment 2 */
