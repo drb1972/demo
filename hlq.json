@@ -59,41 +59,43 @@
     }
   }
 }{
-  "success": true,
-  "exitCode": 0,
-  "message": "",
-  "stdout": "\u001b[32m- \u001b[39m\n  \u001b[33mdsname: \u001b[39mRODDI01.GIT.JCL\n  \u001b[33mblksz: \u001b[39m 32720\n  \u001b[33mcatnm: \u001b[39m ICF.MINI.USERCAT\n  \u001b[33mcdate: \u001b[39m 2021/03/14\n  \u001b[33mdev: \u001b[39m   3390\n  \u001b[33mdsntp: \u001b[39m LIBRARY\n  \u001b[33mdsorg: \u001b[39m PO-E\n  \u001b[33medate: \u001b[39m ***None***\n  \u001b[33mextx: \u001b[39m  1\n  \u001b[33mlrecl: \u001b[39m 80\n  \u001b[33mmigr: \u001b[39m  NO\n  \u001b[33mmvol: \u001b[39m  N\n  \u001b[33movf: \u001b[39m   NO\n  \u001b[33mrdate: \u001b[39m 2021/06/09\n  \u001b[33mrecfm: \u001b[39m FB\n  \u001b[33msizex: \u001b[39m 150\n  \u001b[33mspacu: \u001b[39m CYLINDERS\n  \u001b[33mused: \u001b[39m  1\n  \u001b[33mvol: \u001b[39m   USER04\n  \u001b[33mvols: \u001b[39m  USER04\n\n\n",
-  "stderr": "",
-  "data": {
-    "success": true,
-    "commandResponse": null,
-    "apiResponse": {
-      "items": [
-        {
-          "dsname": "RODDI01.GIT.JCL",
-          "blksz": "32720",
-          "catnm": "ICF.MINI.USERCAT",
-          "cdate": "2021/03/14",
-          "dev": "3390",
-          "dsntp": "LIBRARY",
-          "dsorg": "PO-E",
-          "edate": "***None***",
-          "extx": "1",
-          "lrecl": "80",
-          "migr": "NO",
-          "mvol": "N",
-          "ovf": "NO",
-          "rdate": "2021/06/09",
-          "recfm": "FB",
-          "sizex": "150",
-          "spacu": "CYLINDERS",
-          "used": "1",
-          "vol": "USER04",
-          "vols": "USER04"
-        }
-      ],
-      "returnedRows": 1,
-      "JSONversion": 1
-    }
+  "success": false,
+  "exitCode": 1,
+  "message": "z/OSMF REST API Error:\nhttp(s) request error event called\nError: getaddrinfo ENOTFOUND sr01brs.lvn.broadcom.net sr01brs.lvn.broadcom.net:443",
+  "stdout": "",
+  "stderr": "Command Error:\nz/OSMF REST API Error:\nhttp(s) request error event called\nError: getaddrinfo ENOTFOUND sr01brs.lvn.broadcom.net sr01brs.lvn.broadcom.net:443\nError Details:\nHTTP(S) client encountered an error. Request could not be initiated to host.\nReview connection details (host, port) and ensure correctness.\n\nProtocol:  https\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds?dslevel=RODDI01.GIT.JCL*\nRequest:   GET\nHeaders:   [{\"Accept-Encoding\":\"gzip\"},{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined\n",
+  "data": {},
+  "error": {
+    "msg": "z/OSMF REST API Error:\nhttp(s) request error event called\nError: getaddrinfo ENOTFOUND sr01brs.lvn.broadcom.net sr01brs.lvn.broadcom.net:443",
+    "causeErrors": {
+      "errno": "ENOTFOUND",
+      "code": "ENOTFOUND",
+      "syscall": "getaddrinfo",
+      "hostname": "sr01brs.lvn.broadcom.net",
+      "host": "sr01brs.lvn.broadcom.net",
+      "port": 443
+    },
+    "source": "client",
+    "protocol": "https",
+    "port": 443,
+    "host": "sr01brs.lvn.broadcom.net",
+    "basePath": "",
+    "headers": [
+      {
+        "Accept-Encoding": "gzip"
+      },
+      {
+        "X-IBM-Attributes": "base"
+      },
+      {
+        "X-IBM-Max-Items": "0"
+      },
+      {
+        "X-CSRF-ZOSMF-HEADER": true
+      }
+    ],
+    "resource": "/zosmf/restfiles/ds?dslevel=RODDI01.GIT.JCL*",
+    "request": "GET",
+    "additionalDetails": "HTTP(S) client encountered an error. Request could not be initiated to host.\nReview connection details (host, port) and ensure correctness.\n\nProtocol:  https\nHost:      sr01brs.lvn.broadcom.net\nPort:      443\nBase Path: \nResource:  /zosmf/restfiles/ds?dslevel=RODDI01.GIT.JCL*\nRequest:   GET\nHeaders:   [{\"Accept-Encoding\":\"gzip\"},{\"X-IBM-Attributes\":\"base\"},{\"X-IBM-Max-Items\":\"0\"},{\"X-CSRF-ZOSMF-HEADER\":true}]\nPayload:   undefined"
   }
 }
