@@ -16,3 +16,12 @@
 //SYSUT1   DD   DSN=DATA.ONE,DISP=(SHR)
 //SYSUT2   DD   DSN=DATA.TWO,DISP=(SHR)
 //*
+//StepName EXEC PGM=IDCAMS
+//INPUT    DD   DSN=DataSetName,DISP=SHR,DCB=(DataControlBlock)
+//SYSPRINT DD   SYSOUT=SYSOUT
+//SYSIN    DD   *
+    REPRO -
+       INFILE (Input) -
+       OUTDATASET (OutDataSet) -
+       ERRORLIMIT (ErrorLimit)
+/*
