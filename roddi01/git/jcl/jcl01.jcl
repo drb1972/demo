@@ -2,6 +2,7 @@
 //         CLASS=B,
 //         MSGCLASS=X
 //STEP1    EXEC PGM=IDCAMS
+//* NEW LINE ADDED
 //SYSPRINT DD SYSOUT=*
 //SYSIN    DD   *
     DEFINE CLUSTER -
